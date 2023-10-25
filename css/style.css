@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans:wght@100;300;400;500&display=swap');
+
+/* General */
+.pointer {
+  cursor: pointer;
+}
+
+/* Font */
+body {
+  font-family: 'Noto Sans' !important;
+  color: #3B4A67;
+  font-size: 14px;
+}
+
+/* Background-color */
+.kinder {
+  padding-right: 30px !important;
+  background-color: #F6AB00;
+  border-radius: 6px;
+}
+
+.middle {
+  padding-right: 30px !important;
+  background-color: #0C80D1;
+  border-radius: 6px;
+}
+
+.competition {
+  padding-right: 30px !important;
+  background-color: #BF0B34;
+  border-radius: 6px;
+}
