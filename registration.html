@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/1e357e8cb4.js" crossorigin="anonymous"></script>
+    <script src="js/function.js" type="text/javascript" defer></script>
+    <script src="js/i18n.js" type="text/javascript" defer></script>
+    <script src="js/bootstrap.js" type="text/javascript" defer></script>
+    <script src="js/registration.js" type="text/javascript" defer></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id='index-content' class='container'>
+      <div id='lang-setting' class='mt-2 text-right'>
+        <p class='spacing-0 text-muted pointer fs-12'>
+          <span><i class='fa-solid fa-globe'></i></span>
+          <span id='lang-wording'></span>
+        </p>
+      </div>
+      <div class='row'>
+        <div class='col-lg-5'>
+
+        </div>
+        <div class='col-lg-7'>
+          <h6>
+            <span class='i18n-1'>報名總覽</span>
+            <span> ></span>
+            <span class='i18n-temp-1'>11月2023</span>
+          </h6>
+          <h4 class='i18n-2'>GAPSK幼稚園普通話水平考試(第67屆)</h4>
+          <div class='register-card'>
+            <div class='card shadow-sm mb-3'>
+              <div class='card-body steel-color'>
+                <p class='card-text spacing-0 fs-12'>
+                  <span><i class='fa-solid fa-calendar'></i></span>
+                  <span class='i18n-3'>考試日期</span>
+                </p>
+                <p class='card-text i18n-temp-2 steel-dark-color'>2023年8月20日 星期四</p>
+                <p class='card-text spacing-0 fs-12'>
+                  <span><i class='fa-solid fa-location-dot'></i></span>
+                  <span class='i18n-4'>考試地點</span>
+                </p>
+                <p class='card-text steel-dark-color spacing-0'>日朗坊（荃灣）</p>
+                <p class='card-text steel-color fs-12'>荃灣沙咀道289號恆生荃灣大廈13樓C&D室.(寶石大廈斜對面)</p>
+                <p class='card-text steel-color fs-12'>
+                  <span><i class='fa-solid fa-user-group'></i></span>
+                  <span class='i18n-5'>報名人數 :</span>
+                  <span class='i18n-6 text-danger'>已滿</span>
+                </p>
+                <button type='button' disabled class='btn btn-secondary mx-auto d-block i18n-8' data-toggle='modal' data-target='#staticBackdrop'>報名</button>
+              </div>
+            </div>
+            <div class='card shadow-sm mb-3'>
+              <div class='card-body steel-color'>
+                <p class='card-text spacing-0 fs-12'>
+                  <span><i class='fa-solid fa-calendar'></i></span>
+                  <span class='i18n-3'>考試日期</span>
+                </p>
+                <p class='card-text i18n-temp-3 steel-dark-color'>2023年8月27日 星期日</p>
+                <p class='card-text spacing-0 fs-12'>
+                  <span><i class='fa-solid fa-location-dot'></i></span>
+                  <span class='i18n-4'>考試地點</span>
+                </p>
+                <p class='card-text steel-dark-color spacing-0'>UniEducation</p>
+                <p class='card-text steel-color fs-12'>烏溪沙迎海薈Shop6G,G/F</p>
+                <p class='card-text steel-color fs-12'>
+                  <span><i class='fa-solid fa-user-group'></i></span>
+                  <span class='i18n-5'>報名人數 :</span>
+                  <span class='i18n-7 orange-color'>剩餘少量名額</span>
+                </p>
+                <button type='button' class='btn primary mx-auto d-block i18n-8' data-toggle='modal' data-target='#staticBackdrop'>報名</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal fade' id='staticBackdrop' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered modal-sm'>
+          <div class='modal-content'>
+            <div class='modal-header border-0 justify-content-between'>
+              <h5 class='modal-title' id='staticBackdropLabel'>登入/註冊</h5>
+              <a type='button' class='' data-dismiss='modal'><i class='fa-regular fa-circle-xmark'></i></a>
+            </div>
+            <div class='modal-body text-muted text-left'>
+              <form id='candidate-login-form'>
+                <div class='form-group'>
+                  <label>
+                    <span class='i18n'>監護人聯絡電話</span>
+                  </label>
+                  <div class='input-group'>
+                    <select id='phone_zone' name='phone_zone' class='form-control border-right-0 maw85'>
+                      <option value='+852' selected>+852</option>
+                      <option value='+62'>+62</option>
+                      <option value='+971'>+971</option>
+                      <option value='+61'>+61</option>
+                    </select>
+                    <input id='phone' name='phone' type='number' class='form-control border-left-0 i18n' placeholder='請輸入電話號碼'/>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <label>
+                    <span class=''>考生身份證頭4位數字</span>
+                  </label>
+                  <input id='identity-number' name='identity-number' type='number' class='form-control' placeholder='請輸入考生身份證頭4位數字'>
+                </div>
+              </form>
+              <u class='primary-color pointer text-right d-block'>忘記密碼</u>
+              <div class='text-center mt-2'>
+                <div class='g-recaptcha' data-sitekey='6LduQIkoAAAAACTqA7h-DMcBcBog5mBiHdk-CULq'></div>
+              </div>
+            </div>
+            <div class='modal-footer border-0 flex-lg-row flex-column-reverse justify-content-center'>
+              <button href='candidate-login.html?application=true' class='btn primary'>登入/注册</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  </body>
+<html>
