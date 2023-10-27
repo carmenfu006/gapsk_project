@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+TC:wght@100;300;400;500&family=Noto+Sans:wght@100;300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+TC:wght@100;300;400;500&family=Noto+Sans:wght@100;300;400;500&display=swap'); */
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url(../fonts/NotoSansTC-Regular.ttf) format('truetype');
+}
 
 .g-recaptcha {
   display: inline-block;
@@ -9,6 +14,14 @@
 }
 
 /* General */
+a.dark-steel-color {
+  color: #454545;
+}
+
+a.dark-steel-color:hover {
+  text-decoration: none !important;
+}
+
 a.primary-color:hover {
   color: #0C80D1;
 }
@@ -29,7 +42,7 @@ a.primary {
 /* Font */
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  color: #3B4A67;
+  color: #454545;
   font-size: 14px;
 }
 
@@ -50,12 +63,14 @@ button[disabled]{
 
 button:hover {
   text-decoration: none !important;
-  color: #FFFFFF !important;
+  /* color: #FFFFFF !important; */
+  
 }
 
 .btn {
   border-radius: 32px;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
+  color: #0C80D1;
   box-shadow: none !important;
   outline: none !important;
   font-size: 12px;
@@ -63,6 +78,7 @@ button:hover {
 }
 
 .btn.primary {
+  color: #FFFFFF;
   background-color: #0C80D1;
   box-shadow: 0px 2px 6px rgba(40.37, 166.75, 255, 0.25);
 }
@@ -100,6 +116,10 @@ button:hover {
 }
 
 .primary-color {
+  color: #0C80D1;
+}
+
+.primary-color:hover {
   color: #0C80D1;
 }
 
