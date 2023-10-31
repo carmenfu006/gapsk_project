@@ -38,6 +38,94 @@ translateWeb(
   '報名',
   'Register'
 )
+translateWeb(
+  '.i18n-9',
+  '登入/註冊',
+  'Login/Register'
+)
+translateWeb(
+  '.i18n-10',
+  '監護人聯絡電話',
+  'Guardian contact number'
+)
+translateWeb(
+  '.i18n-11',
+  '請輸入電話號碼',
+  'Enter contact number',
+  true
+)
+translateWeb(
+  '.i18n-12',
+  '考生身份證頭4位數字',
+  "The first 4 digits of the candidate's ID card"
+)
+translateWeb(
+  '.i18n-13',
+  '請輸入考生身份證頭4位數字',
+  "First 4 digits of the candidate's ID card",
+  true
+)
+translateWeb(
+  '.i18n-14',
+  '忘記密碼',
+  'Forgot password'
+)
+translateWeb(
+  '.i18n-15',
+  '短信驗證碼',
+  'SMS verification code'
+)
+translateWeb(
+  '.i18n-16',
+  '請輸入驗證碼',
+  'Code',
+  true
+)
+translateWeb(
+  '.i18n-17',
+  '獲取短信驗證碼',
+  'Get SMS verification code'
+)
+translateWeb(
+  '.i18n-18',
+  '您可以通過以下方式找回密碼',
+  'You can retrieve your password in the following ways'
+)
+translateWeb(
+  '.i18n-19',
+  '提交',
+  'Submit'
+)
+translateWeb(
+  '.i18n-20',
+  '找不到此賬戶',
+  'This account cannot be found'
+)
+translateWeb(
+  '.i18n-21',
+  '請檢查輸入資料是否正確。如無法找回可聯繫客服電郵: info@gapsk.org 或Whatsapp: 6152 6833',
+  'Please check whether the entered information is correct. If you cannot retrieve it, please contact customer service via email: info@gapsk.org or Whatsapp: 6152 6833'
+)
+translateWeb(
+  '.i18n-22',
+  '請重試',
+  'Please try again'
+)
+translateWeb(
+  '.i18n-23',
+  '提交成功',
+  'Submitted successfully'
+)
+translateWeb(
+  '.i18n-24',
+  '我們已經重設你的密碼，請查閱你的手機短信！',
+  'We have reset your password, please check your mobile phone message!'
+)
+translateWeb(
+  '.i18n-25',
+  '返回登入',
+  'Return to login'
+)
 
 
 translateWeb(
@@ -57,7 +145,7 @@ translateWeb(
 )
 
 $('#lang-setting').on('click', function() {
-  getLocalLang() == 'zh' ? setLocal('lang', 'en') : setLocal('lang', 'zh')
+  getLocalLang() == 'zh-hant' ? setLocal('lang', 'en') : setLocal('lang', 'zh-hant')
   location.reload();
 })
 
@@ -66,7 +154,7 @@ switchLangWording()
 function switchLangWording() {
   let lang = getLocalLang();
   switch(lang) {
-    case 'zh':
+    case 'zh-hant':
       $('#lang-wording').html('CHI')
       break;
     case 'en':

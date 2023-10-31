@@ -18,16 +18,47 @@ const getLocalLang = function() {
   return getLocal('lang') ? getLocal('lang') : 'zh';
 }
 
-const translateWeb = function(classname, zh, en) {
+const translateWeb = function(classname, zh_hant, en, input) {
   let lang = getLocalLang();
-  switch(lang) {
-    case 'zh':
-      return $(classname).html(zh)
-      break;
-    case 'en':
-      return $(classname).html(en)
-      break;
-    default:
-      return $(classname).html(zh)
+  if (input) {
+    switch(lang) {
+      case 'zh-hant':
+        $(classname).each(function() {
+          if ($(this)[0].placeholder) {
+            $(this)[0].placeholder = zh_hant;
+          } else {
+            $(this).html(zh_hant);
+          }
+        });
+        break;
+      case 'en':
+        $(classname).each(function() {
+          if ($(this)[0].placeholder) {
+            $(this)[0].placeholder = en;
+          } else {
+            $(this).html(en);
+          }
+        });
+        break;
+      default:
+        $(classname).each(function() {
+          if ($(this)[0].placeholder) {
+            $(this)[0].placeholder = zh_hant;
+          } else {
+            $(this).html(zh_hant);
+          }
+        });
+    }
+  } else {
+    switch(lang) {
+      case 'zh-hant':
+        return $(classname).html(zh_hant)
+        break;
+      case 'en':
+        return $(classname).html(en)
+        break;
+      default:
+        return $(classname).html(zh)
+    }
   }
 }

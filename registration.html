@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.5.1.slim.min.js?v=1.0" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/1e357e8cb4.js" crossorigin="anonymous"></script>
     <script src="js/function.js" type="text/javascript" defer></script>
     <script src="js/i18n.js" type="text/javascript" defer></script>
@@ -80,49 +81,48 @@
         <div class='modal-dialog modal-dialog-centered modal-sm'>
           <div class='modal-content'>
             <div class='modal-header border-0 justify-content-between'>
-              <h5 class='modal-title' id='staticBackdropLabel'>登入/註冊</h5>
+              <h5 class='modal-title i18n-9' id='staticBackdropLabel'>登入/註冊</h5>
               <a class='dark-steel-color' data-dismiss='modal'><i class='fa-regular fa-circle-xmark pointer'></i></a>
             </div>
             <div class='modal-body text-muted text-left'>
               <form id='candidate-login-form'>
                 <div class='form-group'>
                   <label>
-                    <span class='i18n'>監護人聯絡電話</span>
+                    <span class='i18n-10'>監護人聯絡電話</span>
                   </label>
-                  <div class='input-group'>
+                  <div class='input-group fs-12'>
                     <select id='phone_zone' name='phone_zone' class='form-control border-right-0 maw85'>
                       <option value='+852' selected>+852</option>
                       <option value='+62'>+62</option>
                       <option value='+971'>+971</option>
                       <option value='+61'>+61</option>
                     </select>
-                    <input id='phone' name='phone' type='number' class='form-control border-left-0 i18n' placeholder='請輸入電話號碼'/>
+                    <input id='phone' name='phone' type='number' class='form-control border-left-0 i18n-11' placeholder='請輸入電話號碼'/>
                   </div>
                 </div>
-                <div class='form-group'>
+                <div class='form-group fs-12'>
                   <label>
-                    <span class=''>考生身份證頭4位數字</span>
+                    <span class='i18n-12'>考生身份證頭4位數字</span>
                   </label>
-                  <input id='identity_number' name='identity_number' type='number' class='form-control' placeholder='請輸入考生身份證頭4位數字'>
+                  <input id='identity_number' name='identity_number' type='text' class='form-control i18n-13' placeholder='請輸入考生身份證頭4位數字'>
                 </div>
-                <u class='primary-color pointer text-right d-block' data-dismiss='modal' data-toggle='modal' data-target='#staticBackdropForgotPassword'>忘記密碼</u>
+                <u class='i18n-14 primary-color pointer text-right d-block' data-dismiss='modal' data-toggle='modal' data-target='#staticBackdropForgotPassword'>忘記密碼</u>
                 <div class='text-center mt-2'>
                   <div class='g-recaptcha' data-sitekey='6LduQIkoAAAAACTqA7h-DMcBcBog5mBiHdk-CULq'></div>
                 </div>
                 <div class='form-group'>
                   <label>
-                    <span class=''>短信驗證碼</span>
-                    <span class='text-danger'></span>
+                    <span class='i18n-15'>短信驗證碼</span>
                   </label>
                   <div id='input-code' class='input-group border rounded'>
-                    <input type='text' class='form-control border-0 i18n-162' placeholder='請輸入驗證碼' name='verify_code' id='verify_code'>
-                    <button id='verification-code-btn' type='button' class='btn btn-sm bg-white font-weight-light rounded text-right primary-color'>獲取短信驗證碼</button>
+                    <input type='text' class='form-control i18n-16 border-0' placeholder='請輸入驗證碼' name='verify_code' id='verify_code'>
+                    <button id='verification-code-btn' type='button' class='btn btn-sm bg-white font-weight-light rounded text-right primary-color no-width i18n-17'>獲取短信驗證碼</button>
                   </div>
                 </div>
               </form>
             </div>
             <div class='modal-footer border-0 flex-lg-row flex-column-reverse justify-content-center'>
-              <button href='' class='btn primary'>登入/注册</button>
+              <button href='' class='btn primary i18n-9'>登入/註冊</button>
             </div>
           </div>
         </div>
@@ -132,14 +132,14 @@
           <div class='modal-content'>
             <div class='modal-header border-0 justify-content-start'>
               <a class='dark-steel-color' data-dismiss='modal' data-toggle='modal' data-target='#staticBackdropLogin'><i class='fa-solid fa-arrow-left pointer mt-2 mr-2'></i></a>
-              <h5 class='modal-title' id='staticBackdropLabel'>忘記密碼</h5>
+              <h5 class='modal-title i18n-14' id='staticBackdropLabel'>忘記密碼</h5>
             </div>
             <div class='modal-body text-muted text-left'>
               <form id='candidate-login-form'>
                 <div class='form-group'>
-                  <p>您可以通過以下方式找回密碼</p>
+                  <p class='i18n-18'>您可以通過以下方式找回密碼</p>
                   <label>
-                    <span class='i18n'>監護人聯絡電話</span>
+                    <span class='i18n-10 fs-12'>監護人聯絡電話</span>
                   </label>
                   <div class='input-group'>
                     <select id='verify_phone_zone' name='verify_phone_zone' class='form-control border-right-0 maw85'>
@@ -148,18 +148,45 @@
                       <option value='+971'>+971</option>
                       <option value='+61'>+61</option>
                     </select>
-                    <input id='verify_phone' name='verify_phone' type='number' class='form-control border-left-0 i18n' placeholder='請輸入電話號碼'/>
+                    <input id='verify_phone' name='verify_phone' type='number' class='form-control border-left-0 i18n-11' placeholder='請輸入電話號碼'/>
                   </div>
                 </div>
               </form>
             </div>
             <div class='modal-footer border-0 flex-lg-row flex-column-reverse justify-content-center'>
-              <button href='' class='btn primary'>提交</button>
+              <button href='' class='btn primary i18n-19'>提交</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal fade' id='staticBackdropError' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered modal-sm'>
+          <div class='modal-content'>
+            <div class='modal-header border-0 justify-content-start'>
+              <img src='images/error-icon.png' class='img-responsive' width='35px'/>
+            </div>
+            <div class='modal-body'>
+              <h5 class='font-weight-bold i18n-20'>找不到此賬戶</h5>
+              <p class='steel-color i18n-21'>請檢查輸入資料是否正確。如無法找回可聯繫客服電郵: info@gapsk.org 或Whatsapp: 6152 6833</p>
+              <p class='primary-color pointer d-block i18n-22' data-dismiss='modal' data-toggle='modal' data-target='#staticBackdropForgotPassword'>請重試</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal fade' id='staticBackdropSuccess' data-backdrop='static' data-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true'>
+        <div class='modal-dialog modal-dialog-centered modal-sm'>
+          <div class='modal-content'>
+            <div class='modal-header border-0 justify-content-start'>
+              <img src='images/success-icon.png' class='img-responsive' width='35px'/>
+            </div>
+            <div class='modal-body'>
+              <h5 class='font-weight-bold i18n-23'>提交成功</h5>
+              <p class='steel-color i18n-24'>我們已經重設你的密碼，請查閱你的手機短信！</p>
+              <p class='primary-color pointer d-block i18n-25' data-dismiss='modal' data-toggle='modal' data-target='#staticBackdropLogin'>返回登入</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   </body>
 <html>

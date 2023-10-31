@@ -1,3 +1,4 @@
+$('#staticBackdropSuccess').modal('show');
 addRecaptchaToHead()
 
 function addRecaptchaToHead() {

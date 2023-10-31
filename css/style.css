@@ -55,6 +55,11 @@ body {
   font-size: 12px !important;
 }
 
+/* Input Size */
+input::placeholder {
+  font: 12px sans-serif;
+}
+
 /* Button */
 button:disabled,
 button[disabled]{
@@ -64,7 +69,6 @@ button[disabled]{
 button:hover {
   text-decoration: none !important;
   /* color: #FFFFFF !important; */
-  
 }
 
 .btn {
@@ -75,6 +79,10 @@ button:hover {
   outline: none !important;
   font-size: 12px;
   min-width: 10rem;
+}
+
+.btn.no-width {
+  min-width: 0;
 }
 
 .btn.primary {
