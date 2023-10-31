@@ -126,6 +126,41 @@ translateWeb(
   '返回登入',
   'Return to login'
 )
+translateWeb(
+  '.i18n-26',
+  '按“登入/註冊”即代表你已閱讀及明白有關註冊的',
+  'By clicking "Login/Register" you are deemed to have read and understood the relevant registration instructions '
+)
+translateWeb(
+  '.i18n-27',
+  '《GAPSK申請條款及細則》',
+  '(GAPSK Application Terms and Conditions)'
+)
+translateWeb(
+  '.i18n-28',
+  '、',
+  ','
+)
+translateWeb(
+  '.i18n-29',
+  '《私隱政策聲明》',
+  '(Privacy Policy Statement)'
+)
+translateWeb(
+  '.i18n-30',
+  '及',
+  'and'
+)
+translateWeb(
+  '.i18n-31',
+  '《收集個人資料聲明》',
+  'Personal Information Collection Statement'
+)
+translateWeb(
+  '.i18n-32',
+  '，并同意接受其約束',
+  ', and agree to be bound by it'
+)
 
 
 translateWeb(
