@@ -161,6 +161,11 @@ translateWeb(
   '，并同意接受其約束',
   ', and agree to be bound by it'
 )
+translateWeb(
+  '.i18n-33',
+  '確認',
+  'Confirm'
+)
 
 
 translateWeb(

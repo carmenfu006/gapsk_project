@@ -1,5 +1,9 @@
-$('#staticBackdropSuccess').modal('show');
+// $('#staticBackdropSuccess').modal('show');
+// $('#staticBackdropError').modal('show');
 addRecaptchaToHead()
+
+$('#sms-verify-code').hide();
+$('#confirm-btn').hide();
 
 function addRecaptchaToHead() {
   let lang = getLocalLang('lang');

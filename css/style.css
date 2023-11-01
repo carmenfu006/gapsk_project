@@ -39,6 +39,10 @@ a.primary {
   margin: 0;
 }
 
+ol.no-padding {
+  padding-left: 15px;
+}
+
 /* Font */
 body {
   font-family: 'Noto Sans TC', sans-serif;
@@ -110,6 +114,10 @@ button:hover {
   border-radius: 6px;
 }
 
+.ghost-white {
+  background-color: #F4F6FE;
+}
+
 /* Font color */
 .steel-color {
   color: #757575;
@@ -129,6 +137,10 @@ button:hover {
 
 .primary-color:hover {
   color: #0C80D1;
+}
+
+.secondary-color {
+  color: #3B4A67;
 }
 
 /* Max width */
