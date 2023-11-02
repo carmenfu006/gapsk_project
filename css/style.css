@@ -147,3 +147,8 @@ button:hover {
 .maw85 {
   max-width: 85px !important;
 }
+
+/* Content Width */
+.content-768 {
+  max-width: 768px;
+}

@@ -185,23 +185,50 @@ translateWeb(
 )
 
 $('#lang-setting').on('click', function() {
-  getLocalLang() == 'zh-hant' ? setLocal('lang', 'en') : setLocal('lang', 'zh-hant')
+  getLocalLang() == 'zh-hant' ? setLocal('lang', 'en') : setLocal('lang', 'zh-hant');
   location.reload();
 })
 
 switchLangWording()
+switchStatementLang()
 
 function switchLangWording() {
   let lang = getLocalLang();
   switch(lang) {
     case 'zh-hant':
-      $('#lang-wording').html('CHI')
+      $('#lang-wording').html('CHI');
       break;
     case 'en':
-      $('#lang-wording').html('ENG')
+      $('#lang-wording').html('ENG');
       break;
     default:
-      $('#lang-wording').html('CHI')
+      $('#lang-wording').html('CHI');
+  }
+}
+
+function switchStatementLang() {
+  let lang = getLocalLang();
+  $('#tnc-chi').hide();
+  $('#tnc-eng').hide();
+  $('#pic-chi').hide();
+  $('#pic-eng').hide();
+  $('#pp-chi').hide();
+  $('#pp-eng').hide();
+  switch(lang) {
+    case 'zh-hant':
+      $('#tnc-chi').show();
+      $('#pic-chi').show();
+      $('#pp-chi').show();
+      break;
+    case 'en':
+      $('#tnc-eng').show();
+      $('#pic-eng').show();
+      $('#pp-eng').show();
+      break;
+    default:
+      $('#tnc-chi').show();
+      $('#pic-chi').show();
+      $('#pp-chi').show();
   }
 }
   
