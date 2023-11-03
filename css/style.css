@@ -118,6 +118,10 @@ button:hover {
   background-color: #F4F6FE;
 }
 
+.shade-orange {
+  background-color: #FFFAF5;
+}
+
 /* Font color */
 .steel-color {
   color: #757575;

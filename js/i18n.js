@@ -166,6 +166,11 @@ translateWeb(
   '確認',
   'Confirm'
 )
+translateWeb(
+  '.i18n-34',
+  '操作時效',
+  'Operation timeliness'
+)
 
 
 translateWeb(
@@ -191,6 +196,7 @@ $('#lang-setting').on('click', function() {
 
 switchLangWording()
 switchStatementLang()
+switchTooltipLang()
 
 function switchLangWording() {
   let lang = getLocalLang();
@@ -230,5 +236,12 @@ function switchStatementLang() {
       $('#pic-chi').show();
       $('#pp-chi').show();
   }
+}
+
+function switchTooltipLang() {
+  let lang = getLocalLang();
+  let tooltip_chi = $('.tooltip-chi');
+  let tooltip_eng = $('.tooltip-eng');
+  (lang == 'zh-hant') ? tooltip_chi.removeClass('d-none') : tooltip_eng.removeClass('d-none');
 }
   

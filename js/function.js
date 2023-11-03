@@ -15,7 +15,7 @@ const setLocal = function(key, value) {
 }
 
 const getLocalLang = function() {
-  return getLocal('lang') ? getLocal('lang') : 'zh';
+  return getLocal('lang') ? getLocal('lang') : 'zh-hant';
 }
 
 const translateWeb = function(classname, zh_hant, en, input) {

@@ -5,6 +5,8 @@ addRecaptchaToHead()
 $('#sms-verify-code').hide();
 $('#confirm-btn').hide();
 
+addRecaptchaToHead();
+
 function addRecaptchaToHead() {
   let lang = getLocalLang('lang');
   const script = document.createElement("script");
@@ -12,3 +14,7 @@ function addRecaptchaToHead() {
 
   document.head.appendChild(script);
 }
+
+$('#login-btn').on('click', function() {
+  window.location.href = window.location.origin + '/candidate-information.html'
+})
