@@ -1,3 +1,5 @@
+// i18n.js applies to all HTML
+
 translateWeb(
   '.i18n-1',
   '報名總覽',
@@ -198,6 +200,7 @@ switchLangWording()
 switchStatementLang()
 switchTooltipLang()
 
+// To show opposite language as an option for switching.
 function switchLangWording() {
   let lang = getLocalLang();
   switch(lang) {
@@ -212,6 +215,7 @@ function switchLangWording() {
   }
 }
 
+// To hide/show statement based on preferred language.
 function switchStatementLang() {
   let lang = getLocalLang();
   $('#tnc-chi').hide();
@@ -238,6 +242,7 @@ function switchStatementLang() {
   }
 }
 
+// To switch tooltip between language.
 function switchTooltipLang() {
   let lang = getLocalLang();
   let tooltip_chi = $('.tooltip-chi');

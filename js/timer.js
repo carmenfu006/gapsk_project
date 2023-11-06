@@ -1,4 +1,4 @@
-// setTimer()
+setTimer()
 
 function setTimer() {
   // Set the date we're counting down to
@@ -14,7 +14,7 @@ function setTimer() {
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    // Display the result in the element with id="demo"
+    // Display the result in the element
     document.getElementById('operation-timer').innerHTML = hours.toLocaleString(undefined,{minimumIntegerDigits: 2}) + ':'
     + minutes.toLocaleString(undefined,{minimumIntegerDigits: 2}) + ':' + seconds.toLocaleString(undefined,{minimumIntegerDigits: 2});
     // If the count down is finished, write some text

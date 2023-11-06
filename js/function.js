@@ -1,3 +1,5 @@
+// function.js applies to all HTML
+
 const getSession = function(key) {
   return sessionStorage.getItem(key);
 }
